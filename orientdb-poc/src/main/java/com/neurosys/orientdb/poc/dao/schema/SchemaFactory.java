@@ -15,7 +15,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.neurosys.orientdb.poc.domain.Subject;
-import com.neurosys.orientdb.poc.schema.TestSchemaHybrid;
 import com.orientechnologies.orient.core.metadata.schema.OClass;
 import com.orientechnologies.orient.core.metadata.schema.OType;
 import com.orientechnologies.orient.core.sql.query.OSQLSynchQuery;
@@ -28,7 +27,7 @@ import com.orientechnologies.orient.object.db.OObjectDatabaseTx;
 public class SchemaFactory {
 	
 	OObjectDatabaseTx database;
-	Logger log = LoggerFactory.getLogger(TestSchemaHybrid.class);
+	Logger log = LoggerFactory.getLogger(SchemaFactory.class);
 	
 	/*
 	 * Connecting to default database
